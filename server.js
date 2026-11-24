@@ -193,8 +193,8 @@ app.get("/api/pdf", autenticar, async (req,res) => {
     }
 })
 
-criarBanco().then(() => (process.env.PORT, "0.0.0.0", () => console.log("Servidor rodando na porta 3000")))
-.catch((erro) => {
-    console.log(erro)
+criarBanco()
+.then(() => app.listen(process.env.PORT, "0.0.0.0", () => console.log("Servidor rodando na porta 3000")))
+.catch((erro) => { console.log(erro)
     process.exit(1)
 })
