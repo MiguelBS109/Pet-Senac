@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header strong{
+    font-size: 40px;
+    font-family: fantasy;
+}
+
+main{
+    text-align: center;
+    align-items: center;
+}
+
+main h1{
+    margin-bottom: 10px;
+}
+
+.grid{
+    margin-bottom: 15px;
+}
+
+#formAtendimento{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input{
+    border-radius: 10px;
+    border: none;
+    border: 2px #2d3688 solid;
+    transition: 0.3s;
+}
+
+form input:hover {
+    transform: translateY(10px);
+}
+
+form select:hover {
+    transform: translateY(10px);
+}
+
+form select {
+    border-radius: 10px;
+    border: none;
+    border: 2px #2d3688 solid;
+}
+
+#btnSalvar{
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+}
+
+#btnSalvar:hover{
+    transform: translateY(10px);
+}
+
+.sub{
+    border-bottom: 20px;
+    font-size: 20px;
+}
