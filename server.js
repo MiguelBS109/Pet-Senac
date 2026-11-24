@@ -145,7 +145,7 @@ app.get("/api/verificar", autenticar, (req, res) => {
 async function conectarPython(endpoint, atendimentos, res, tipo) {
     try{
     const url = process.env.PYTHON_API_URL 
-     const resposta = await fetch(`${url.replace(/\/$/, "")} ${endpoint}`, {
+     const resposta = await fetch (`${url.replace(/\/$/, "")}${endpoint}`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
